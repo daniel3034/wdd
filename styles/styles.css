@@ -57,16 +57,23 @@ footer {
 
 .box {
     margin: 1rem;
-    border: 1rem solid rgba(0, 0, 0, .1);
-    padding: ;
-    background-color: blue;
-    color: red;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    padding: 1px;
+    background-color: rgb(128, 128, 128, 0.2);
+    color: black;
 }
 aside {
     width: 20em;
     text-align: center;
+    position: relative;
 }
 main img {
     float: right;
-    /* width: 200px; */
+    margin: 0 0 1rem 1rem;
+}
+
+aside h2 {
+    position: absolute;
+    top: 46rem;
+    left: 4rem;
 }
