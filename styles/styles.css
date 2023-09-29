@@ -74,6 +74,7 @@ main img {
 
 aside h2 {
     position: absolute;
-    top: 46rem;
+    top: 1rem;
     left: 4rem;
+    font-size: 20px;
 }
