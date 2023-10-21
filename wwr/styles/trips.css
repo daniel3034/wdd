@@ -19,6 +19,7 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,102 +82,60 @@ body {
     max-height: auto;
 }
 
-.hero {
-    position: relative;
-    max-width: 100%;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-} 
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; 
-}
-
-.hero-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.action {
     background-color: var(--nav-background-color);
-    padding: 20px;
-    z-index: 1;
-    border-radius: 10px;
-}
-
-.hero-article img {
-    float: right;
-}
-
-/* Style for History Section */
-
-.history-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
-    background-color: var(--nav-background-color);
-    margin-top: 20px;
     border-radius: 10px;
 }
 
-.history-content {
-    max-width: 800px;
-    margin-top: 10px;
+.action h1 {
+    font-size: 32px;
+    color: var(--accent1-color);
 }
 
-.history-content {
+.action p {
+    font-size: 16px;
     color: var(--accent2-color);
-    font-size: 1.2rem;
-    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-/* Style for Adventure Section */
-
-.adventure-section {
-    text-align: center;
-  padding: 20px;
-  background-color: var(--nav-background-color);
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-.adventure-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    max-width: 100%;
-    overflow-x: auto;
-  }
-
-  figure {
+.action a {
     display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--nav-hover-background-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.action a:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/* Trips and images */
+
+.trips h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+figure {
+    display: inline-block;
+    vertical-align: top;
     max-width: 500px;
     width: 30%;
     text-align: center;
     margin: 0 10px;
+    vertical-align: auto;
 }
 
 figure img {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 figcaption {
@@ -185,27 +144,79 @@ figcaption {
     font-size: 1rem;
 }
 
-  /* Footer Style  */
+.trips a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
 
-  footer {
+.trips a:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/* Table */
+
+.trip-table {
+    margin: 20px;
+}
+
+.trip-table h2 {
+    font-size: 24px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--accent1-color);
+}
+
+.trip-table th, .trip-table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+}
+
+.trip-table th {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.trip-table tr {
+    background-color: var(--accent2-color);
+}
+
+.trip-table tr:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Style  */
+
+footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: var(--accent1-color);
     padding: 10px;
     border-radius: 10px;
-  }
+}
 
-  .sociallinks {
+.sociallinks {
     display: flex;
     gap: 5px;
-  }
+}
 
-  .sociallinks a {
+.sociallinks a {
     display: block;
-  }
+}
 
-  .sociallinks img {
+.sociallinks img {
     width: 30px;
     height: auto;
-  }
+}
