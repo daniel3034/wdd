@@ -138,7 +138,7 @@ figure img {
     border-radius: 10px;
 }
 
-figcaption {
+figure p {
     margin-top: 0;
     color: var(--accent2-color);
     font-size: 1rem;
