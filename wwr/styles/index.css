@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
+:root {
+    --primary-color: #14213d;
+    --secondary-color: #fca311;
+    --accent1-color:#000000;
+    --accent2-color:#e5e5e5;
+
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --paragraph-font: 'Roboto Condensed', sans-serif;
+
+    --nav-background-color: #fca311;
+    --nav-link-color: #e5e5e5;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #14213d;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 2fr;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+}
+
+img[src="images/logo.png"] {
+    max-width: 100%;
+    margin: 0 0.25rem 0 0;
+    border-radius: 10px;
+}
+p {
+    padding: 15px;
+    color: var(--accent2-color);
+}
+
+nav{
+    display: flex;
+    text-align: right;
+	list-style: none;
+    background-color: var(--nav-background-color);
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    color: #333;
+    margin-left: auto;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+    flex: 1 1 100%;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    font-weight: 700;
+	text-decoration: underline;
+}
+body {
+    background-color: var(--primary-color);
+    max-width: 1920px;
+    max-height: auto;
+}
+
+.action {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.action h1 {
+    font-size: 32px;
+    color: var(--accent1-color);
+}
+
+.action p {
+    font-size: 16px;
+    color: var(--accent2-color);
+    margin-bottom: 15px;
+}
+
+.action a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--nav-hover-background-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.action a:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/* Trips and images */
+
+.trips h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+figure {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 500px;
+    width: 30%;
+    text-align: center;
+    margin: 0 10px;
+    vertical-align: auto;
+}
+
+figure img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+figure p {
+    margin-top: 0;
+    color: var(--accent2-color);
+    font-size: 1rem;
+}
+
+.trips a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.trips a:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/* Table */
+
+.trip-table {
+    margin: 20px;
+}
+
+.trip-table h2 {
+    font-size: 24px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--accent1-color);
+}
+
+.trip-table th, .trip-table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+}
+
+.trip-table th {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.trip-table tr {
+    background-color: var(--accent2-color);
+}
+
+.trip-table tr:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Style  */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 5px;
+}
+
+.sociallinks a {
+    display: block;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: auto;
+}
