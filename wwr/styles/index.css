@@ -105,7 +105,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    /* background-color: var(--accent1-color); */
 }
 
 .newsletter, .action {
@@ -118,7 +117,7 @@ body {
 .newsletter {
     max-width: 40%;
     text-align: center;
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
     padding: 20px;
 }
 
